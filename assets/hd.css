@@ -1,6 +1,6 @@
 /* TCPCホールディングス サイト共通スタイル（トップ・下層ページ共通） */
 /* Layout after LayerX: rounded panels inset 20px from the viewport, EN label + hairline over bold JP headings,
-   circle-arrow buttons, floating Menu pill after scroll. Motif = wave/ribbon parts in assets/. Only motion = scroll reveal. */
+   circle-arrow buttons, floating Menu pill after scroll. Motif = wave/ribbon parts in assets/. Motion: see the "motion" block at the end + assets/hd.js. */
 :root{
   --bg:#FFFFFF;
   --fg:#231F20;
@@ -228,11 +228,7 @@ a:hover .circ svg{transform:translateX(2px)}
 .foot ul a{text-decoration:none;color:var(--muted)}.foot ul a:hover{color:var(--accent)}
 .foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:64px;padding-top:24px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
 
-/* the one motion: scroll reveal (items already in view render complete) */
-@supports (animation-timeline: view()){
-  .reveal{animation:revealUp linear both;animation-timeline:view();animation-range:entry 0% entry 55%}
-  @keyframes revealUp{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
-}
+/* motion lives at the end of this file (see "motion") */
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation:none!important;transition:none!important}
@@ -334,3 +330,76 @@ a:hover .circ svg{transform:translateX(2px)}
 .form,.side > div{background:var(--panel)}
 .form input[type=text],.form input[type=email],.form input[type=tel],.form textarea{background:var(--card)}
 .sec{overflow-x:clip}
+
+/* ---------- motion ----------
+   .js が付いているときだけ初期状態を隠し、hd.js が画面に入った要素に .in を付けて動かす。
+   reveal 系は translate / scale プロパティで動かすので、hover の transform とぶつからない。 */
+:root{--ease:cubic-bezier(.22,.8,.24,1)}
+@view-transition{navigation:auto}
+::view-transition-old(root){animation:vt-out .35s var(--ease) both}
+::view-transition-new(root){animation:vt-in .6s var(--ease) both}
+@keyframes vt-out{to{opacity:0;translate:0 -14px}}
+@keyframes vt-in{from{opacity:0;translate:0 18px}}
+
+.scroll-progress{position:fixed;left:0;top:0;z-index:60;width:100%;height:3px;background:linear-gradient(90deg,var(--accent),#E58A90);transform-origin:0 50%;transform:scaleX(0);pointer-events:none}
+
+.js .rv{opacity:0}
+.js .rv.in{opacity:1;animation:rv-up 1s var(--ease) calc(var(--i,0) * 90ms) both}
+@keyframes rv-up{from{opacity:0;translate:0 44px}to{opacity:1;translate:0 0}}
+.js .rv-img{clip-path:inset(0 0 100% 0)}
+.js .rv-img.in{clip-path:inset(0 0 0 0);animation:rv-clip 1.4s var(--ease) calc(var(--i,0) * 110ms) both}
+.js .rv-img.in img{animation:rv-zoom 2s var(--ease) calc(var(--i,0) * 110ms) both}
+@keyframes rv-clip{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes rv-zoom{from{scale:1.22}to{scale:1}}
+.js .rv-lines .ln{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em}
+.js .rv-lines .ln>span{display:inline-block;translate:0 110%}
+.js .rv-lines.in .ln>span{translate:0 0;animation:rv-line 1.2s var(--ease) calc(var(--i,0) * 140ms + 120ms) both}
+@keyframes rv-line{from{translate:0 110%}to{translate:0 0}}
+.js .rv-draw{clip-path:inset(0 100% 0 0)}
+.js .rv-draw.in{clip-path:inset(0 0 0 0);animation:rv-draw 2.4s var(--ease) .2s both}
+@keyframes rv-draw{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+
+/* hero の出る順番 */
+.hero .ph-main{--i:1}.hero .ph-sub{--i:6}.hero-sub{--i:4}.hero-lead{--i:5}
+
+/* 流れる文字の帯 */
+.marquee{overflow:hidden;padding:clamp(4px,1vw,12px) 0 clamp(40px,5vw,72px)}
+.marquee-track{display:flex;width:max-content;animation:marquee 48s linear infinite}
+.marquee span{flex:none;padding-right:.5em;font:600 clamp(44px,8vw,116px)/1.15 var(--font-en);letter-spacing:-.01em;white-space:nowrap;color:transparent;-webkit-text-stroke:1px color-mix(in srgb,var(--accent) 50%,transparent)}
+.marquee span:nth-child(even){font-family:var(--font-jp);font-weight:700;color:var(--accent-soft);-webkit-text-stroke:0}
+.marquee:hover .marquee-track{animation-play-state:paused}
+@keyframes marquee{to{transform:translateX(-50%)}}
+
+/* hover */
+.photo img,.hd-img img{transition:transform 1.1s var(--ease)}
+.hd-card,.svc,.loc,.quote,.prop-list li{transition:transform .55s var(--ease),box-shadow .55s var(--ease)}
+.hd-card:hover,.svc:hover,.loc:hover,.prop-list li:hover{transform:translateY(-6px);box-shadow:0 20px 44px rgba(35,31,32,.12)}
+.hd-card:hover .hd-img img,.concept-fig:hover .photo img,.mission-photos .photo:hover img,.split .photo:hover img{transform:scale(1.06)}
+.biz .name{transition:translate .5s var(--ease)}
+.biz a:hover .name{translate:10px 0}
+.news-list a .t,.news-list .nthumb img{transition:translate .5s var(--ease),transform .8s var(--ease),color .3s}
+.news-list a:hover .t{translate:8px 0}
+.news-list a:hover .nthumb img{transform:scale(1.1)}
+.gnav a{position:relative}
+.gnav a::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;border-radius:1px;background:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .45s var(--ease)}
+.gnav a:hover::after,.gnav a[aria-current]::after{transform:scaleX(1);transform-origin:left}
+.cta-pill,.btn-submit{position:relative;overflow:hidden;transition:transform .4s var(--ease),box-shadow .4s}
+.cta-pill:hover,.btn-submit:hover{transform:translateY(-2px)}
+.cta-pill::after,.btn-submit::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.4) 50%,transparent 70%);translate:-120% 0;transition:translate .9s var(--ease);pointer-events:none}
+.cta-pill:hover::after,.btn-submit:hover::after{translate:120% 0}
+.circ{transition:background .3s,color .3s,border-color .3s,transform .45s var(--ease)}
+a:hover .circ{transform:scale(1.08)}
+.pill{transition:transform .4s var(--ease),box-shadow .4s}
+.pill:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(35,31,32,.16)}
+
+/* メニュー */
+.menu-panel:not([hidden]){animation:menu-in .55s var(--ease) both}
+@keyframes menu-in{from{opacity:0;translate:0 -18px;scale:.985}to{opacity:1;translate:0 0;scale:1}}
+.menu-panel:not([hidden]) .menu-group h3,.menu-panel:not([hidden]) .menu-group li{animation:rv-up .6s var(--ease) both;animation-delay:calc(var(--i,0) * 35ms + 120ms)}
+.menu-group a{transition:color .3s,translate .4s var(--ease)}
+.menu-group a:hover{translate:6px 0}
+
+@media (prefers-reduced-motion: reduce){
+  .marquee-track{animation:none}
+  .scroll-progress{display:none}
+}

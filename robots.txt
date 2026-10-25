@@ -1,0 +1,4 @@
+# 交渉中のため、すべての検索エンジンを拒否している。
+# 正式公開時は下の Disallow を「Disallow:」（空）に変え、index.html の robots メタタグも外す。
+User-agent: *
+Disallow: /

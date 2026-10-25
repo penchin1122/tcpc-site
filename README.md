@@ -6,6 +6,14 @@
 
 `index.html` をブラウザで開きます。`assets` フォルダの画像（波・リボンのパーツ）を使っているので、フォルダごと扱ってください。写真はネット上の画像を表示しているため、表示にはネット接続が必要です。
 
+## 正式公開するときに外す・直すもの
+
+- `index.html` の `<meta name="robots" content="noindex, nofollow">` を削除する（今は検索エンジンに載らないようにしている）
+- `robots.txt` の `Disallow: /` を `Disallow:`（空）にする
+- `index.html` の canonical / og:url / og:image は公開先を `https://www.tcpc-group.co.jp/` と仮定している。実際の公開先に合わせる
+- `assets/favicon.svg` と `assets/apple-touch-icon.png` は波モチーフの仮アイコン。TCPCロゴのベクターデータが届いたら差し替える
+- `assets/ogp.png`（SNSで共有したときの画像、1200×630）は仮の文言で作っている
+
 ## 公開前に差し替えるもの
 
 - 写真：Unsplash の仮画像。自社で撮影した写真に差し替える

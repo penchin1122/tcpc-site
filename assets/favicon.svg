@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- 仮のファビコン（サイトの波モチーフ）。TCPCロゴのベクターデータが届いたら差し替える -->
+  <rect width="64" height="64" rx="14" fill="#B3424A"/>
+  <path d="M8 38c8-10 16-12 24-6s16 4 24-6" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>
+  <path d="M8 48c8-8 16-9 24-4s16 3 24-5" fill="none" stroke="#F6D9DC" stroke-width="3" stroke-linecap="round"/>
+</svg>

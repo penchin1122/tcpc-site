@@ -5,6 +5,8 @@
 ## 構成
 
 - `index.html`：TCPCホールディングスのトップページ案
+- `about.html`（理念・ビジョン・構想）／`business.html`（事業内容）／`company.html`（会社概要・所在地）／`news.html`（ニュース）／`contact.html`（お問い合わせ）：HDの下層ページ。内容は現行サイト tcpc-group.co.jp の記載をもとにしている
+- `assets/hd.css`・`assets/hd.js`：HDサイトの共通スタイルとメニューの動き（トップ・下層ページ共通）
 - `irios/`：株式会社イリオスのサイト案（トップ＋下層6ページ）。HDとは別デザイン（社名の由来の太陽神とロゴのオレンジがテーマ）。内容は現行サイト irios.co.jp の記載をもとにしている
 
 ## 見方

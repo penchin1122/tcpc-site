@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#E8641E">
+<title>お問い合わせ｜株式会社イリオス</title>
+<meta name="description" content="店舗物件の賃貸・売買、テナント募集、商業施設のご相談はイリオスへ。無料相談を承ります。">
+<!-- 交渉中のため検索エンジンに載せない。正式公開時に外す -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Outfit:wght@500;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px clamp(40px,6vw,80px);align-items:center}
+@media (max-width:900px){.split{grid-template-columns:1fr}}
+.split .photo{aspect-ratio:4/3}
+.svc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:700px){.svc{grid-template-columns:1fr}}
+.svc div{padding:22px 24px;background:var(--white);border-left:4px solid var(--sun);border-radius:var(--radius);box-shadow:var(--shadow)}
+.svc h3{margin:0 0 6px;font-size:17px;font-weight:900}
+.svc p{margin:0;font-size:14.5px;color:var(--muted)}
+.area{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:700px){.area{grid-template-columns:1fr}}
+.area div{padding:24px;background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow)}
+.area h3{margin:0 0 6px;font-size:18px;font-weight:900;color:var(--sun-ink)}
+.area p{margin:0;color:var(--muted);font-size:14.5px}
+.note{margin:16px 0 0;font-size:13px;color:var(--muted)}
+
+.contact{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:32px;align-items:start}
+@media (max-width:900px){.contact{grid-template-columns:1fr}}
+.form{display:grid;gap:22px;padding:clamp(24px,4vw,40px);background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow)}
+.field{display:grid;gap:8px}
+.field > label,.field legend{font-weight:700;font-size:15px}
+.req{margin-left:8px;padding:1px 8px;border-radius:4px;background:var(--sun-ink);color:#fff;font-size:11px;vertical-align:2px}
+input[type=text],input[type=email],input[type=tel],textarea{width:100%;padding:12px 14px;border:1px solid #D7CEC3;border-radius:var(--radius);background:#fff;font:inherit;color:inherit}
+textarea{min-height:160px;resize:vertical}
+fieldset{margin:0;padding:0;border:0;display:grid;gap:8px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips label{display:inline-flex;align-items:center;gap:8px;padding:8px 14px;border:1px solid #D7CEC3;border-radius:999px;cursor:pointer;font-size:14.5px}
+.chips input{accent-color:var(--sun-ink)}
+.agree{display:flex;gap:10px;align-items:flex-start;font-size:14px}
+.agree input{margin-top:5px;accent-color:var(--sun-ink)}
+.demo-note{margin:0;padding:12px 16px;border-radius:var(--radius);background:var(--sun-pale);font-size:13.5px;color:var(--muted)}
+.side{display:grid;gap:16px}
+.side div{padding:24px;background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow)}
+.side h2{margin:0 0 8px;font-size:17px;font-weight:900}
+.side .tel{display:block;font:700 30px/1.2 var(--font-num);color:var(--sun-ink);text-decoration:none}
+.side p{margin:0;font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="https://www.irios.co.jp/common/images/header-title4.png" alt="株式会社イリオス" width="120" height="70"><span>店舗・商業・事業用地の<br>不動産仲介</span></a>
+    <nav class="gnav" aria-label="グローバル">
+      <a href="tenant.html">テナントサポート</a><a href="owner.html">オーナーサポート</a><a href="facilities.html">商業施設サポート</a><a href="search.html">物件検索</a><a href="company.html">企業情報</a>
+    </nav>
+    <a class="head-tel" href="tel:0120210314"><b>0120-210-314</b><small>無料相談はこちら</small></a>
+    <a class="btn" href="contact.html">お問い合わせ</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="drawer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg><span>メニュー</span></button>
+  </div>
+</header>
+<div class="drawer" id="drawer" hidden>
+  <nav aria-label="メニュー"><a href="index.html">トップ</a><a href="tenant.html">テナントサポート</a><a href="owner.html">オーナーサポート</a><a href="facilities.html">商業施設サポート</a><a href="search.html">物件検索</a><a href="company.html">企業情報</a><a href="contact.html">お問い合わせ</a></nav>
+  <div class="drawer-cta"><a class="head-tel" href="tel:0120210314"><b>0120-210-314</b><small>無料相談はこちら</small></a></div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <span class="sun-ring" aria-hidden="true"></span>
+    <span class="sun" aria-hidden="true"></span>
+    <div class="wrap">
+      <ol class="crumbs"><li><a href="index.html">トップ</a></li><li aria-current="page">お問い合わせ</li></ol>
+      <h1>お問い合わせ</h1>
+      <p>店舗物件の賃貸・売買、テナント募集、商業施設の運営のご相談まで、無料で承ります。お電話またはメールフォームからお問い合わせください。</p>
+    </div>
+  </section>
+
+  <section class="section" aria-label="お問い合わせフォーム">
+    <div class="wrap contact">
+      <form class="form" onsubmit="event.preventDefault()">
+        <p class="demo-note">これはサイト案（デモ）のため、送信しても内容は届きません。</p>
+        <fieldset class="field">
+          <legend>ご相談の内容<span class="req">必須</span></legend>
+          <div class="chips">
+            <label><input type="radio" name="kind" value="rent" required>借りたい</label>
+            <label><input type="radio" name="kind" value="lend">貸したい</label>
+            <label><input type="radio" name="kind" value="buy">買いたい</label>
+            <label><input type="radio" name="kind" value="sell">売りたい</label>
+            <label><input type="radio" name="kind" value="sc">商業施設の運営</label>
+            <label><input type="radio" name="kind" value="other">その他</label>
+          </div>
+        </fieldset>
+        <div class="field"><label for="f-company">会社名</label><input type="text" id="f-company" name="company" autocomplete="organization"></div>
+        <div class="field"><label for="f-name">お名前<span class="req">必須</span></label><input type="text" id="f-name" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="f-mail">メールアドレス<span class="req">必須</span></label><input type="email" id="f-mail" name="email" autocomplete="email" required></div>
+        <div class="field"><label for="f-tel">電話番号</label><input type="tel" id="f-tel" name="tel" autocomplete="tel"></div>
+        <div class="field"><label for="f-body">お問い合わせ内容<span class="req">必須</span></label><textarea id="f-body" name="body" required placeholder="ご希望のエリア、広さ、業種、ご予算などをご記入ください"></textarea></div>
+        <label class="agree"><input type="checkbox" required>プライバシーポリシーに同意のうえ送信します</label>
+        <button class="btn" type="submit" style="justify-self:start">送信する（デモ）</button>
+      </form>
+      <aside class="side">
+        <div><h2>お電話でのご相談</h2><a class="tel" href="tel:0120210314">0120-210-314</a><p>無料相談を承ります。</p></div>
+        <div><h2>物件を探している方へ</h2><p style="margin-bottom:12px">物件検索サイトから、気になる物件を直接お問い合わせいただけます。</p><a class="link-arrow" href="search.html">物件検索サイトを見る<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a></div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="consult" aria-labelledby="consult-title">
+    <span class="sun" aria-hidden="true"></span>
+    <div class="wrap">
+      <div>
+        <h2 id="consult-title">店舗物件のご相談は、無料で承ります</h2>
+        <p>出店先探し、空き区画のテナント募集、売買のご相談まで。お電話またはメールフォームからお気軽にどうぞ。</p>
+      </div>
+      <div class="consult-actions">
+        <a class="tel" href="tel:0120210314"><b>0120-210-314</b><small>無料相談</small></a>
+        <a class="btn" href="contact.html">メールで相談する</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-co">
+        <img src="https://www.irios.co.jp/common/images/header-title4.png" alt="株式会社イリオス" width="120" height="70">
+        <p>株式会社イリオス<br>本社：東京都新宿区西新宿2丁目<br>大阪事務所：大阪府大阪市北区梅田／沖縄事務所：沖縄県那覇市<br>宅地建物取引業者免許 国土交通大臣（5）第6232号</p>
+      </div>
+      <div><h3>事業内容</h3><ul><li><a href="tenant.html">テナントサポート</a></li><li><a href="owner.html">オーナーサポート</a></li><li><a href="facilities.html">商業施設サポート</a></li></ul></div>
+      <div><h3>物件を探す</h3><ul><li><a href="search.html">物件検索サイト一覧</a></li><li><a href="https://www.irios.co.jp/link/irisearch.html">イリサーチ</a></li><li><a href="https://www.irios.co.jp/link/uri.html">売りサーチ</a></li></ul></div>
+      <div><h3>イリオスについて</h3><ul><li><a href="company.html">企業情報</a></li><li><a href="company.html#history">沿革</a></li><li><a href="contact.html">お問い合わせ</a></li><li><a href="#">プライバシーポリシー</a></li></ul></div>
+    </div>
+    <div class="foot-group"><span>TCPCグループ</span><a href="../index.html">TCPCホールディングス</a><a href="https://www.sougou-gfm.co.jp/">総合施設管理</a><a href="https://www.iri-ma.co.jp/">IRI M&amp;Aコンサルティング</a><a href="https://www.flap.co.jp/">フラップインターナショナル</a></div>
+    <div class="foot-bottom"><span>© IRIOS Co., Ltd.</span><span>サイト案（デモ）：写真は仮画像です</span></div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

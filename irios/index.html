@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#E8641E">
+<title>株式会社イリオス｜店舗・商業・事業用地の不動産仲介</title>
+<meta name="description" content="店舗物件はイリオスにおまかせください。駅前・商店街の路面店からロードサイド、ショッピングセンター内の区画まで、関東・関西を中心に店舗物件の賃貸・売買を仲介しています。">
+<!-- 交渉中のため検索エンジンに載せない。正式公開時に外す -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Outfit:wght@500;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+/* top page */
+.hero{position:relative;overflow:hidden;background:var(--white)}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:40px clamp(32px,5vw,72px);align-items:center;padding-top:clamp(40px,6vw,88px);padding-bottom:clamp(120px,12vw,168px)}
+@media (max-width:900px){.hero .wrap{grid-template-columns:1fr}}
+.hero h1{margin:0 0 24px;font-size:clamp(32px,4.4vw,56px);font-weight:900;line-height:1.4;letter-spacing:.04em}
+.hero h1 em{font-style:normal;color:var(--sun-ink)}
+.hero .lead{margin-bottom:32px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.hero-visual{position:relative;aspect-ratio:5/4}
+.hero-visual .sun{width:78%;aspect-ratio:1;height:auto;right:-14%;bottom:-22%;z-index:0}
+.hero-visual .sun-ring{width:104%;aspect-ratio:1;height:auto;right:-27%;bottom:-35%}
+.hero-visual .photo{position:absolute;inset:0 8% 10% 0;z-index:1;box-shadow:var(--shadow)}
+
+.entry{position:relative;z-index:2;margin-top:-88px}
+.entry-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+@media (max-width:900px){.entry-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.entry a{display:flex;flex-direction:column;gap:6px;min-height:150px;padding:24px 22px;background:var(--white);border-top:5px solid var(--sun);border-radius:var(--radius);box-shadow:var(--shadow);text-decoration:none;transition:transform .2s}
+.entry a:hover{transform:translateY(-3px)}
+.entry b{font-size:clamp(20px,2vw,24px);font-weight:900;letter-spacing:.06em}
+.entry b::after{content:" →";color:var(--sun-ink)}
+.entry span{font-size:13.5px;color:var(--muted);line-height:1.7}
+.entry small{font-size:12px;font-weight:700;color:var(--sun-ink);letter-spacing:.06em}
+
+.stats{background:var(--sun);color:#1E2229}
+.stats .wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding-top:48px;padding-bottom:48px}
+@media (max-width:700px){.stats .wrap{grid-template-columns:1fr}}
+.stat{display:flex;flex-direction:column;gap:6px;padding-left:20px;border-left:2px solid rgba(30,34,41,.25)}
+.stat b{font:700 clamp(38px,5vw,56px)/1 var(--font-num)}
+.stat b small{margin-left:4px;font:700 clamp(16px,1.6vw,20px) var(--font-jp)}
+.stat span{font-size:14px;font-weight:700}
+
+.strength{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px clamp(40px,6vw,80px);align-items:center}
+@media (max-width:900px){.strength{grid-template-columns:1fr}}
+.strength .photo{aspect-ratio:4/3}
+.strength .checks{margin-top:28px}
+
+.search-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+@media (max-width:900px){.search-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.search-grid{grid-template-columns:1fr}}
+.search-grid a{display:grid;grid-template-columns:minmax(0,1fr) 20px;gap:4px 12px;align-items:center;padding:20px 22px;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);text-decoration:none}
+.search-grid a:hover{border-color:var(--sun)}
+.search-grid b{font-size:17px}
+.search-grid span{grid-column:1;font-size:13px;color:var(--muted);line-height:1.7}
+.search-grid svg{grid-row:1/3;grid-column:2;width:18px;height:18px;color:var(--sun-ink)}
+
+.news-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.news-list li{border-bottom:1px solid var(--line)}
+.news-list a{display:grid;grid-template-columns:110px 100px minmax(0,1fr);gap:6px 20px;align-items:center;padding:20px 4px;text-decoration:none}
+.news-list a:hover .t{color:var(--sun-ink)}
+@media (max-width:640px){.news-list a{grid-template-columns:auto auto;justify-content:start}.news-list .t{grid-column:1/-1}}
+.news-list time{font:500 14px var(--font-num);color:var(--muted)}
+.news-head{display:flex;justify-content:space-between;align-items:end;gap:16px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="https://www.irios.co.jp/common/images/header-title4.png" alt="株式会社イリオス" width="120" height="70"><span>店舗・商業・事業用地の<br>不動産仲介</span></a>
+    <nav class="gnav" aria-label="グローバル">
+      <a href="tenant.html">テナントサポート</a><a href="owner.html">オーナーサポート</a><a href="facilities.html">商業施設サポート</a><a href="search.html">物件検索</a><a href="company.html">企業情報</a>
+    </nav>
+    <a class="head-tel" href="tel:0120210314"><b>0120-210-314</b><small>無料相談はこちら</small></a>
+    <a class="btn" href="contact.html">お問い合わせ</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="drawer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg><span>メニュー</span></button>
+  </div>
+</header>
+<div class="drawer" id="drawer" hidden>
+  <nav aria-label="メニュー"><a href="index.html">トップ</a><a href="tenant.html">テナントサポート</a><a href="owner.html">オーナーサポート</a><a href="facilities.html">商業施設サポート</a><a href="search.html">物件検索</a><a href="company.html">企業情報</a><a href="contact.html">お問い合わせ</a></nav>
+  <div class="drawer-cta"><a class="head-tel" href="tel:0120210314"><b>0120-210-314</b><small>無料相談はこちら</small></a></div>
+</div>
+
+<main>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <p class="kicker">店舗・商業・事業用地の不動産仲介</p>
+        <h1 id="hero-title"><em>店舗物件</em>は、<br>イリオスに<br>おまかせください。</h1>
+        <p class="lead">駅前・商店街の路面店から、ロードサイド、ショッピングセンター内の区画まで。関東・関西を中心に、店舗物件の賃貸・売買を仲介しています。</p>
+        <div class="hero-actions">
+          <a class="btn" href="search.html">物件を探す<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a>
+          <a class="btn btn-line" href="contact.html">無料で相談する</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <span class="sun-ring" aria-hidden="true"></span>
+        <span class="sun" aria-hidden="true"></span>
+        <div class="photo"><img src="https://images.unsplash.com/photo-1791640870158-2e15b4595892?w=1400&q=80&auto=format&fit=crop" alt="路面店が並ぶ通り（仮画像）" fetchpriority="high"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="entry" aria-label="ご相談の目的から探す">
+    <div class="wrap">
+      <div class="entry-grid">
+        <a href="tenant.html"><small>テナント企業様</small><b>借りたい</b><span>出店先の店舗物件を探している</span></a>
+        <a href="owner.html"><small>オーナー様</small><b>貸したい</b><span>空き区画や退去予定の区画に、テナントを迎えたい</span></a>
+        <a href="search.html#uri"><small>投資家・事業者様</small><b>買いたい</b><span>投資用・自己利用の店舗物件を購入したい</span></a>
+        <a href="contact.html"><small>オーナー様</small><b>売りたい</b><span>所有している店舗物件を売却したい</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="strength-title">
+    <div class="wrap strength">
+      <div class="reveal">
+        <p class="kicker">イリオスについて</p>
+        <h2 class="h2" id="strength-title">店舗・商業・事業用地に<br>特化した不動産仲介</h2>
+        <p class="lead">1996年の創立以来、店舗物件を専門に、小規模な路面店から大規模なショッピングセンターまでの出店に携わってきました。</p>
+        <ul class="checks">
+          <li>ショッピングセンター内の物件は、2005年に開設した専門部署（SC事業部）が担当</li>
+          <li>過去の貸店舗物件の統計を分析し、立地や募集条件をご相談に合わせて助言</li>
+          <li>売買物件は、購入後のプロパティマネジメントや空室のテナント誘致まで一括で対応</li>
+        </ul>
+      </div>
+      <div class="photo reveal"><img src="https://images.unsplash.com/photo-1573879034406-75858991ba97?w=1100&q=80&auto=format&fit=crop" alt="明るいオフィスでの打ち合わせ（仮画像）" loading="lazy"></div>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="数字で見るイリオス">
+    <div class="wrap">
+      <div class="stat"><b class="num">15,000<small>社以上</small></b><span>出店希望テナントの登録数（全国）</span></div>
+      <div class="stat"><b class="num">500<small>件超</small></b><span>年間の成約実績</span></div>
+      <div class="stat"><b class="num">1996<small>年</small></b><span>創立。店舗物件ひとすじに30年</span></div>
+    </div>
+  </section>
+
+  <section class="section white" aria-labelledby="service-title">
+    <div class="wrap">
+      <div class="sec-head center">
+        <p class="kicker">事業内容</p>
+        <h2 class="h2" id="service-title">出店する方、貸す方、運営する方へ</h2>
+        <p class="lead">ご相談の立場に合わせて、3つのサポートを用意しています。</p>
+      </div>
+      <div class="grid-3">
+        <a class="card reveal" href="tenant.html">
+          <div class="photo"><img src="https://images.unsplash.com/photo-1729322143006-35d4fbb5c9f9?w=800&q=80&auto=format&fit=crop" alt="路面の店舗（仮画像）" loading="lazy"></div>
+          <div class="card-body"><span class="tag">テナント企業様</span><h3>テナントサポート</h3><p>物件情報の提供から物件診断、出店戦略の立案、出店交渉まで。店舗展開を進める企業の出店をお手伝いします。</p><span class="link-arrow">詳しく見る<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></div>
+        </a>
+        <a class="card reveal" href="owner.html">
+          <div class="photo"><img src="https://images.unsplash.com/photo-1783819503950-acff77f911fa?w=800&q=80&auto=format&fit=crop" alt="商業施設の空き区画（仮画像）" loading="lazy"></div>
+          <div class="card-body"><span class="tag">オーナー様</span><h3>オーナーサポート</h3><p>テナント誘致、プロパティマネジメント、サブリース、土地の有効活用まで。事業用資産の活用をご提案します。</p><span class="link-arrow">詳しく見る<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></div>
+        </a>
+        <a class="card reveal" href="facilities.html">
+          <div class="photo"><img src="https://images.unsplash.com/photo-1619335680642-964b9c259d5e?w=800&q=80&auto=format&fit=crop" alt="ショッピングセンターの館内（仮画像）" loading="lazy"></div>
+          <div class="card-body"><span class="tag">デベロッパー様</span><h3>商業施設サポート</h3><p>営業中のショッピングセンターや複合商業施設の、空き区画のリーシングやゾーニングの見直しを支援します。</p><span class="link-arrow">詳しく見る<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5"/></svg></span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section pale" aria-labelledby="search-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">物件検索</p>
+        <h2 class="h2" id="search-title">目的に合わせた、6つの物件検索サイト</h2>
+        <p class="lead">賃貸の店舗物件から、クリニック向け、ショッピングセンター、居抜き、売買、店舗用地まで。イリオスが運営しています。</p>
+      </div>
+      <div class="search-grid">
+        <a href="https://www.irios.co.jp/link/irisearch.html"><b>イリサーチ</b><span>全国の賃貸店舗物件</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h8v8M13 3L3 13"/></svg></a>
+        <a href="https://www.irios.co.jp/link/cli.html"><b>クリサーチ</b><span>クリニック・医院向けの物件</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h8v8M13 3L3 13"/></svg></a>
+        <a href="https://www.irios.co.jp/link/sc.html"><b>SC店舗ねっと</b><span>ショッピングセンター・駅ビルの店舗</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h8v8M13 3L3 13"/></svg></a>
+        <a href="https://www.irios.co.jp/link/inukikosho.html"><b>居抜き交渉ねっと</b><span>居抜きで交渉できる可能性のある物件</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h8v8M13 3L3 13"/></svg></a>
+        <a href="https://www.irios.co.jp/link/uri.html"><b>売りサーチ</b><span>事業用店舗物件の売買</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h8v8M13 3L3 13"/></svg></a>
+        <a href="https://www.irios.co.jp/link/tenpoyochi.html"><b>店舗用地ねっと</b><span>店舗向けの用地物件</span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h8v8M13 3L3 13"/></svg></a>
+      </div>
+      <p style="margin:24px 0 0"><a class="link-arrow" href="search.html">各サイトの説明を見る<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a></p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="news-title">
+    <div class="wrap">
+      <div class="sec-head news-head">
+        <div><p class="kicker">お知らせ</p><h2 class="h2" id="news-title" style="margin:0">News</h2></div>
+      </div>
+      <ul class="news-list">
+        <li><a href="#"><time datetime="2026-08-04">2026.08.04</time><span class="tag">お知らせ</span><span class="t">夏季休業期間中のお問い合わせ対応について</span></a></li>
+        <li><a href="#"><time datetime="2026-07-20">2026.07.20</time><span class="tag">お知らせ</span><span class="t">大阪事務所移転のお知らせ</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="consult" aria-labelledby="consult-title">
+    <span class="sun" aria-hidden="true"></span>
+    <div class="wrap">
+      <div>
+        <h2 id="consult-title">店舗物件のご相談は、無料で承ります</h2>
+        <p>出店先探し、空き区画のテナント募集、売買のご相談まで。お電話またはメールフォームからお気軽にどうぞ。</p>
+      </div>
+      <div class="consult-actions">
+        <a class="tel" href="tel:0120210314"><b>0120-210-314</b><small>無料相談</small></a>
+        <a class="btn" href="contact.html">メールで相談する</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-co">
+        <img src="https://www.irios.co.jp/common/images/header-title4.png" alt="株式会社イリオス" width="120" height="70">
+        <p>株式会社イリオス<br>本社：東京都新宿区西新宿2丁目<br>大阪事務所：大阪府大阪市北区梅田／沖縄事務所：沖縄県那覇市<br>宅地建物取引業者免許 国土交通大臣（5）第6232号</p>
+      </div>
+      <div><h3>事業内容</h3><ul><li><a href="tenant.html">テナントサポート</a></li><li><a href="owner.html">オーナーサポート</a></li><li><a href="facilities.html">商業施設サポート</a></li></ul></div>
+      <div><h3>物件を探す</h3><ul><li><a href="search.html">物件検索サイト一覧</a></li><li><a href="https://www.irios.co.jp/link/irisearch.html">イリサーチ</a></li><li><a href="https://www.irios.co.jp/link/uri.html">売りサーチ</a></li></ul></div>
+      <div><h3>イリオスについて</h3><ul><li><a href="company.html">企業情報</a></li><li><a href="company.html#history">沿革</a></li><li><a href="contact.html">お問い合わせ</a></li><li><a href="#">プライバシーポリシー</a></li></ul></div>
+    </div>
+    <div class="foot-group"><span>TCPCグループ</span><a href="../index.html">TCPCホールディングス</a><a href="https://www.sougou-gfm.co.jp/">総合施設管理</a><a href="https://www.iri-ma.co.jp/">IRI M&amp;Aコンサルティング</a><a href="https://www.flap.co.jp/">フラップインターナショナル</a></div>
+    <div class="foot-bottom"><span>© IRIOS Co., Ltd.</span><span>サイト案（デモ）：写真は仮画像です</span></div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

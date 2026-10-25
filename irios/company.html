@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#E8641E">
+<title>企業情報｜株式会社イリオス</title>
+<meta name="description" content="株式会社イリオスの企業情報。ご挨拶、会社概要、沿革、グループ会社をご紹介します。">
+<!-- 交渉中のため検索エンジンに載せない。正式公開時に外す -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Outfit:wght@500;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:40px clamp(40px,6vw,80px);align-items:center}
+@media (max-width:900px){.split{grid-template-columns:1fr}}
+.split .photo{aspect-ratio:4/3}
+.svc{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:700px){.svc{grid-template-columns:1fr}}
+.svc div{padding:22px 24px;background:var(--white);border-left:4px solid var(--sun);border-radius:var(--radius);box-shadow:var(--shadow)}
+.svc h3{margin:0 0 6px;font-size:17px;font-weight:900}
+.svc p{margin:0;font-size:14.5px;color:var(--muted)}
+.area{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:700px){.area{grid-template-columns:1fr}}
+.area div{padding:24px;background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow)}
+.area h3{margin:0 0 6px;font-size:18px;font-weight:900;color:var(--sun-ink)}
+.area p{margin:0;color:var(--muted);font-size:14.5px}
+.note{margin:16px 0 0;font-size:13px;color:var(--muted)}
+
+.sub-nav{display:flex;flex-wrap:wrap;gap:10px;margin:0;padding:0;list-style:none}
+.sub-nav a{display:inline-block;padding:8px 18px;border-radius:999px;background:var(--white);box-shadow:var(--shadow);font-size:14px;font-weight:700;text-decoration:none}
+.sub-nav a:hover{color:var(--sun-ink)}
+.anchor{scroll-margin-top:96px}
+.helios{display:grid;grid-template-columns:auto minmax(0,1fr);gap:28px;align-items:center;padding:32px;background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow)}
+@media (max-width:640px){.helios{grid-template-columns:1fr}}
+.helios .mark{position:relative;width:120px;height:120px}
+.helios .mark .sun{inset:0;width:100%;height:100%}
+.helios h3{margin:0 0 6px;font-size:20px;font-weight:900}
+.helios p{margin:0;color:var(--muted)}
+.creed{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:20px}
+@media (max-width:760px){.creed{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.creed div{padding:20px;background:var(--sun-pale);border-radius:var(--radius);font-weight:700;text-align:center}
+.creed span{display:block;font:700 13px var(--font-num);color:var(--sun-ink)}
+.timeline{list-style:none;margin:0;padding:0;border-left:3px solid var(--sun-soft)}
+.timeline li{position:relative;display:grid;grid-template-columns:120px minmax(0,1fr);gap:4px 24px;padding:12px 0 12px 28px}
+.timeline li::before{content:"";position:absolute;left:-8px;top:21px;width:13px;height:13px;border-radius:50%;background:var(--sun)}
+.timeline time{font:700 15px var(--font-num);color:var(--sun-ink)}
+@media (max-width:560px){.timeline li{grid-template-columns:1fr}}
+.group{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:700px){.group{grid-template-columns:1fr}}
+.group a{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:20px 24px;background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);text-decoration:none}
+.group a:hover b{color:var(--sun-ink)}
+.group small{display:block;font-size:12.5px;color:var(--muted)}
+.group svg{width:18px;height:18px;color:var(--sun-ink);flex:none}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="https://www.irios.co.jp/common/images/header-title4.png" alt="株式会社イリオス" width="120" height="70"><span>店舗・商業・事業用地の<br>不動産仲介</span></a>
+    <nav class="gnav" aria-label="グローバル">
+      <a href="tenant.html">テナントサポート</a><a href="owner.html">オーナーサポート</a><a href="facilities.html">商業施設サポート</a><a href="search.html">物件検索</a><a href="company.html" aria-current="page">企業情報</a>
+    </nav>
+    <a class="head-tel" href="tel:0120210314"><b>0120-210-314</b><small>無料相談はこちら</small></a>
+    <a class="btn" href="contact.html">お問い合わせ</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="drawer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg><span>メニュー</span></button>
+  </div>
+</header>
+<div class="drawer" id="drawer" hidden>
+  <nav aria-label="メニュー"><a href="index.html">トップ</a><a href="tenant.html">テナントサポート</a><a href="owner.html">オーナーサポート</a><a href="facilities.html">商業施設サポート</a><a href="search.html">物件検索</a><a href="company.html">企業情報</a><a href="contact.html">お問い合わせ</a></nav>
+  <div class="drawer-cta"><a class="head-tel" href="tel:0120210314"><b>0120-210-314</b><small>無料相談はこちら</small></a></div>
+</div>
+
+<main>
+  <section class="page-hero">
+    <span class="sun-ring" aria-hidden="true"></span>
+    <span class="sun" aria-hidden="true"></span>
+    <div class="wrap">
+      <ol class="crumbs"><li><a href="index.html">トップ</a></li><li aria-current="page">企業情報</li></ol>
+      <h1>企業情報</h1>
+      <p>創業以来、商業店舗をテーマに不動産の活用を考えてきました。オーナー様の資産をお預かりし、それを最適に活かすテナント様と結びつけることが、私たちの仕事の根本です。</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-bottom:0" aria-label="ページ内リンク">
+    <div class="wrap"><ul class="sub-nav"><li><a href="#greeting">ご挨拶</a></li><li><a href="#summary">会社概要</a></li><li><a href="#history">沿革</a></li><li><a href="#group">グループ会社</a></li></ul></div>
+  </section>
+
+  <section class="section anchor" id="greeting" aria-labelledby="c-greet">
+    <div class="wrap">
+      <div class="sec-head"><p class="kicker">ご挨拶</p><h2 class="h2" id="c-greet">商業店舗をテーマに、<br>不動産の活用を考えてきました</h2>
+        <p class="lead">これからは商業店舗に限らず、事業用資産全般でお客様の満足を実現したいと考えています。TCPCグループの一員として、オーナー様・テナント様の発展とともに歩んでいきます。</p></div>
+      <div class="helios reveal">
+        <div class="mark" aria-hidden="true"><span class="sun"></span></div>
+        <div><h3>社名の由来</h3><p>「イリオス」は、ギリシャ神話の太陽神「HELIOS（ヘリオス）」に由来しています。</p></div>
+      </div>
+      <h3 style="margin:40px 0 0;font-size:18px;font-weight:900">企業理念</h3>
+      <div class="creed">
+        <div><span>01</span>最適なプランの提案</div>
+        <div><span>02</span>提案の実現</div>
+        <div><span>03</span>信頼関係の構築</div>
+        <div><span>04</span>顧客満足の創出</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white anchor" id="summary" aria-labelledby="c-summary">
+    <div class="wrap">
+      <div class="sec-head"><p class="kicker">会社概要</p><h2 class="h2" id="c-summary">会社概要</h2></div>
+      <table class="table">
+        <tr><th>社名</th><td>株式会社イリオス（IRIOS Co., Ltd.）</td></tr>
+        <tr><th>設立</th><td>1996年（平成8年）2月6日</td></tr>
+        <tr><th>資本金</th><td>1億円</td></tr>
+        <tr><th>代表者</th><td>代表取締役社長 酒井勝広</td></tr>
+        <tr><th>従業員数</th><td>143名（2026年4月1日現在。グループ全体、パート・アルバイトを含み役員を除く）</td></tr>
+        <tr><th>事業内容</th><td>商業・事業用不動産の賃貸と売買の仲介／SC・商業施設・再開発物件のリーシング／商業不動産のコンバージョン／プロパティマネジメント／土地の有効活用の企画／不動産の管理／内装工事の請負</td></tr>
+        <tr><th>免許</th><td>宅地建物取引業者免許 国土交通大臣（5）第6232号</td></tr>
+        <tr><th>加盟団体</th><td>不動産保証協会／全日本不動産協会／日本ショッピングセンター協会</td></tr>
+        <tr><th>拠点</th><td>本社・SC事業部・全国営業部：東京都新宿区西新宿2丁目<br>大阪事務所：大阪府大阪市北区梅田<br>沖縄事務所：沖縄県那覇市</td></tr>
+      </table>
+      <p class="note">※ 番地や電話番号などの詳細は、公開前に確認して追記します。</p>
+    </div>
+  </section>
+
+  <section class="section anchor" id="history" aria-labelledby="c-history">
+    <div class="wrap">
+      <div class="sec-head"><p class="kicker">沿革</p><h2 class="h2" id="c-history">沿革</h2></div>
+      <ol class="timeline">
+        <li><time>1996年2月</time><span>創立</span></li>
+        <li><time>1997年1月</time><span>本社所在地を東京都渋谷区千駄ヶ谷に移転</span></li>
+        <li><time>1998年1月</time><span>本社所在地を東京都渋谷区代々木1丁目に移転／資本金1,000万円に増資</span></li>
+        <li><time>1998年4月</time><span>株式会社イリオスに商号変更</span></li>
+        <li><time>1999年1月</time><span>本社所在地を東京都渋谷区代々木2丁目に移転</span></li>
+        <li><time>2002年3月</time><span>100%出資子会社「株式会社総合施設管理」創立</span></li>
+        <li><time>2002年9月</time><span>資本金5,000万円に増資</span></li>
+        <li><time>2004年12月</time><span>本社所在地を東京都渋谷区千駄ヶ谷5丁目に移転</span></li>
+        <li><time>2005年2月</time><span>資本金1億円に増資</span></li>
+        <li><time>2005年8月</time><span>SC事業部（ショッピングセンター事業部）開設</span></li>
+        <li><time>2009年1月</time><span>イリオスを中心とした企業グループ「株式会社TCPC（ホールディングス）」創立</span></li>
+        <li><time>2011年6月</time><span>本社事務所を増床</span></li>
+        <li><time>2012年6月</time><span>大阪事務所開設</span></li>
+        <li><time>2012年10月</time><span>本社事務所を増床</span></li>
+        <li><time>2013年12月</time><span>M&amp;A事業を行う「アイアールアイM&amp;Aコンサルティング株式会社」創立</span></li>
+        <li><time>2016年1月</time><span>本社所在地を東京都新宿区西新宿1丁目に移転</span></li>
+        <li><time>2016年2月</time><span>創立20周年</span></li>
+        <li><time>2018年9月</time><span>大阪事務所を大阪府大阪市北区梅田に移転</span></li>
+        <li><time>2019年6月</time><span>高橋雅彦が取締役会長に、酒井勝広が代表取締役社長に就任</span></li>
+        <li><time>2025年3月</time><span>本社所在地を東京都新宿区西新宿2丁目に移転</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section pale anchor" id="group" aria-labelledby="c-group">
+    <div class="wrap">
+      <div class="sec-head"><p class="kicker">グループ会社</p><h2 class="h2" id="c-group">TCPCグループ</h2>
+        <p class="lead">TCPCは「Total Commercial Property Consultants（商業財産の総合コンサルタント）」の略です。グループ各社が、それぞれの専門領域でお客様の商業財産に「規模拡大」「価値の向上」「価値の継続」をもたらすことをめざしています。</p></div>
+      <div class="group">
+        <a href="../index.html"><span><b>株式会社TCPCホールディングス</b><small>グループの持株会社</small></span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 8h12M9 3l5 5-5 5"/></svg></a>
+        <a href="https://www.sougou-gfm.co.jp/"><span><b>株式会社総合施設管理</b><small>ビル・施設管理</small></span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h8v8M13 3L3 13"/></svg></a>
+        <a href="https://www.iri-ma.co.jp/"><span><b>IRI M&amp;Aコンサルティング株式会社</b><small>M&amp;A・事業承継</small></span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h8v8M13 3L3 13"/></svg></a>
+        <a href="https://www.flap.co.jp/"><span><b>株式会社フラップインターナショナル</b><small>店舗運営・リテール</small></span><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 3h8v8M13 3L3 13"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="consult" aria-labelledby="consult-title">
+    <span class="sun" aria-hidden="true"></span>
+    <div class="wrap">
+      <div>
+        <h2 id="consult-title">店舗物件のご相談は、無料で承ります</h2>
+        <p>出店先探し、空き区画のテナント募集、売買のご相談まで。お電話またはメールフォームからお気軽にどうぞ。</p>
+      </div>
+      <div class="consult-actions">
+        <a class="tel" href="tel:0120210314"><b>0120-210-314</b><small>無料相談</small></a>
+        <a class="btn" href="contact.html">メールで相談する</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-co">
+        <img src="https://www.irios.co.jp/common/images/header-title4.png" alt="株式会社イリオス" width="120" height="70">
+        <p>株式会社イリオス<br>本社：東京都新宿区西新宿2丁目<br>大阪事務所：大阪府大阪市北区梅田／沖縄事務所：沖縄県那覇市<br>宅地建物取引業者免許 国土交通大臣（5）第6232号</p>
+      </div>
+      <div><h3>事業内容</h3><ul><li><a href="tenant.html">テナントサポート</a></li><li><a href="owner.html">オーナーサポート</a></li><li><a href="facilities.html">商業施設サポート</a></li></ul></div>
+      <div><h3>物件を探す</h3><ul><li><a href="search.html">物件検索サイト一覧</a></li><li><a href="https://www.irios.co.jp/link/irisearch.html">イリサーチ</a></li><li><a href="https://www.irios.co.jp/link/uri.html">売りサーチ</a></li></ul></div>
+      <div><h3>イリオスについて</h3><ul><li><a href="company.html">企業情報</a></li><li><a href="company.html#history">沿革</a></li><li><a href="contact.html">お問い合わせ</a></li><li><a href="#">プライバシーポリシー</a></li></ul></div>
+    </div>
+    <div class="foot-group"><span>TCPCグループ</span><a href="../index.html">TCPCホールディングス</a><a href="https://www.sougou-gfm.co.jp/">総合施設管理</a><a href="https://www.iri-ma.co.jp/">IRI M&amp;Aコンサルティング</a><a href="https://www.flap.co.jp/">フラップインターナショナル</a></div>
+    <div class="foot-bottom"><span>© IRIOS Co., Ltd.</span><span>サイト案（デモ）：写真は仮画像です</span></div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>
